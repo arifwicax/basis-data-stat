@@ -1,4 +1,4 @@
-# Modul Week 10 — Python Basic untuk Visualisasi Basis Data
+# Modul Week 11 — Python Basic untuk Visualisasi Basis Data
 
 **Mata Kuliah:** Basis Data
 **Topik:** Pengenalan Python & Integrasi dengan MySQL untuk Visualisasi Data

@@ -1,26 +1,26 @@
 # ============================================================
 # 03_pandas_dataframe.py
-# Week 10 - Basis Data
-# Topik: Pengolahan Data MySQL dengan pandas DataFrame
+# Week 11 - Basis Data Statistik
+# Topik: Pengolahan Data PostgreSQL dengan pandas DataFrame
 # ============================================================
 
-import mysql.connector
 import pandas as pd
+import psycopg2
 
 # -------------------------------------------------------
 # CONFIG
 # -------------------------------------------------------
 DB_CONFIG = {
-    "host"     : "localhost",
-    "port"     : 3306,
-    "user"     : "root",
-    "password" : "root",
-    "database" : "sistem_akademik"
+    "host": "localhost",
+    "port": 5432,
+    "user": "postgres",
+    "password": "postgres",
+    "dbname": "sistem_akademik",
 }
 
 def get_df(query, columns, params=None):
     """Jalankan query dan kembalikan sebagai pandas DataFrame."""
-    conn   = mysql.connector.connect(**DB_CONFIG)
+    conn = psycopg2.connect(**DB_CONFIG)
     cursor = conn.cursor()
     try:
         cursor.execute(query, params or ())
@@ -32,7 +32,7 @@ def get_df(query, columns, params=None):
 
 
 # -------------------------------------------------------
-# 1. MEMBUAT DATAFRAME DARI MYSQL
+# 1. MEMBUAT DATAFRAME DARI POSTGRESQL
 # -------------------------------------------------------
 print("=" * 60)
 print("1. DATAFRAME MAHASISWA")

@@ -1,7 +1,7 @@
 # ============================================================
 # 04_visualisasi.py
-# Week 10 - Basis Data
-# Topik: Visualisasi Data MySQL dengan Matplotlib & Seaborn
+# Week 11 - Basis Data Statistik
+# Topik: Visualisasi Data PostgreSQL dengan Matplotlib & Seaborn
 #
 # Menghasilkan satu figure dengan 4 grafik:
 #   [1] Bar Chart   — Jumlah Mahasiswa per Jurusan
@@ -10,28 +10,28 @@
 #   [4] Stacked Bar — Peserta Matakuliah per Jurusan
 # ============================================================
 
-import mysql.connector
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import seaborn as sns
+import psycopg2
 
 # -------------------------------------------------------
 # CONFIG
 # -------------------------------------------------------
 DB_CONFIG = {
-    "host"     : "localhost",
-    "port"     : 3306,
-    "user"     : "root",
-    "password" : "root",
-    "database" : "sistem_akademik"
+    "host": "localhost",
+    "port": 5432,
+    "user": "postgres",
+    "password": "postgres",
+    "dbname": "sistem_akademik",
 }
 
 WARNA_UTAMA = "#4C72B0"
 WARNA_SET   = sns.color_palette("tab10")
 
 def get_df(query, columns, params=None):
-    conn   = mysql.connector.connect(**DB_CONFIG)
+    conn = psycopg2.connect(**DB_CONFIG)
     cursor = conn.cursor()
     try:
         cursor.execute(query, params or ())
@@ -96,7 +96,7 @@ pivot_stacked = df_stacked.pivot_table(
 # BUAT FIGURE — 2 x 2 SUBPLOT
 # -------------------------------------------------------
 fig, axes = plt.subplots(2, 2, figsize=(16, 11))
-fig.suptitle("Dashboard Sistem Akademik — Visualisasi Data MySQL",
+fig.suptitle("Dashboard Sistem Akademik — Visualisasi Data PostgreSQL",
              fontsize=16, fontweight="bold", y=1.01)
 
 sns.set_style("whitegrid")
@@ -190,7 +190,7 @@ ax4.legend(title="Matakuliah", fontsize=7, title_fontsize=8,
 plt.tight_layout()
 
 # Simpan ke file PNG
-output_file = demik.png"
+output_file = "dashboard_akademik_postgresql.png"
 plt.savefig(output_file, dpi=150, bbox_inches="tight")
 print(f"✓ Dashboard berhasil disimpan ke: {output_file}")
 
