@@ -574,4 +574,150 @@ USE [nama_database];
 
 ---
 
+## PENILAIAN ANGGOTA KELOMPOK *(Peer Assessment)*
+
+> Bagian ini diisi oleh **setiap anggota kelompok** secara jujur dan independen. Penilaian bersifat rahasia dan digunakan sebagai bahan evaluasi kontribusi individu dalam proyek kelompok.
+
+### Ketentuan Penilaian
+
+| Ketentuan | Keterangan |
+|-----------|------------|
+| Penilai | Setiap anggota menilai **seluruh anggota lain** dalam kelompok (tidak menilai diri sendiri) |
+| Aspek | Kontribusi teknis, keaktifan, tanggung jawab, kerja sama |
+| Skala | 1–4 (lihat rubrik di bawah) |
+| Pengisian | Diisi secara **terpisah** oleh masing-masing anggota, tidak berdiskusi |
+
+### Rubrik Penilaian
+
+| Skor | Kategori | Deskripsi |
+|------|----------|-----------|
+| **4** | Sangat Baik | Selalu aktif, kontribusi sangat signifikan, sangat kooperatif |
+| **3** | Baik | Cukup aktif, kontribusi memadai, kooperatif |
+| **2** | Cukup | Kurang aktif, kontribusi terbatas, kadang tidak responsif |
+| **1** | Kurang | Tidak aktif, hampir tidak berkontribusi, tidak kooperatif |
+
+### Aspek yang Dinilai
+
+| Kode | Aspek | Deskripsi |
+|------|-------|-----------|
+| **A** | Kontribusi Teknis | Keterlibatan dalam pengerjaan ERD, SQL, dan laporan |
+| **B** | Keaktifan | Kehadiran dan partisipasi dalam diskusi kelompok |
+| **C** | Tanggung Jawab | Menyelesaikan bagian tugasnya tepat waktu |
+| **D** | Kerja Sama | Sikap kooperatif, komunikatif, dan saling membantu |
+
+---
+
+### Formulir Penilaian — [Nama Penilai]: [Nama Anggota 1]
+
+> *Diisi oleh: **[Nama Anggota 1]** (NIM: [NIM])*
+
+#### Penilaian untuk Anggota 2: [Nama Anggota 2]
+
+| Aspek | Skor (1–4) | Catatan / Bukti Konkret |
+|-------|-----------|--------------------------|
+| A — Kontribusi Teknis | | |
+| B — Keaktifan | | |
+| C — Tanggung Jawab | | |
+| D — Kerja Sama | | |
+| **Total** | **/16** | |
+
+**Komentar:**
+> _[Tuliskan komentar singkat mengenai kontribusi anggota ini dalam proyek]_
+
+---
+
+#### Penilaian untuk Anggota 3: [Nama Anggota 3]
+
+| Aspek | Skor (1–4) | Catatan / Bukti Konkret |
+|-------|-----------|--------------------------|
+| A — Kontribusi Teknis | | |
+| B — Keaktifan | | |
+| C — Tanggung Jawab | | |
+| D — Kerja Sama | | |
+| **Total** | **/16** | |
+
+**Komentar:**
+> _[Tuliskan komentar singkat mengenai kontribusi anggota ini dalam proyek]_
+
+---
+
+#### Penilaian untuk Anggota 4: [Nama Anggota 4] *(hapus jika tidak ada)*
+
+| Aspek | Skor (1–4) | Catatan / Bukti Konkret |
+|-------|-----------|--------------------------|
+| A — Kontribusi Teknis | | |
+| B — Keaktifan | | |
+| C — Tanggung Jawab | | |
+| D — Kerja Sama | | |
+| **Total** | **/16** | |
+
+**Komentar:**
+> _[Tuliskan komentar singkat mengenai kontribusi anggota ini dalam proyek]_
+
+---
+
+### Formulir Penilaian — [Nama Penilai]: [Nama Anggota 2]
+
+> *Diisi oleh: **[Nama Anggota 2]** (NIM: [NIM])*
+
+#### Penilaian untuk Anggota 1: [Nama Anggota 1]
+
+| Aspek | Skor (1–4) | Catatan / Bukti Konkret |
+|-------|-----------|--------------------------|
+| A — Kontribusi Teknis | | |
+| B — Keaktifan | | |
+| C — Tanggung Jawab | | |
+| D — Kerja Sama | | |
+| **Total** | **/16** | |
+
+**Komentar:**
+> _[Tuliskan komentar singkat]_
+
+---
+
+#### Penilaian untuk Anggota 3: [Nama Anggota 3]
+
+| Aspek | Skor (1–4) | Catatan / Bukti Konkret |
+|-------|-----------|--------------------------|
+| A — Kontribusi Teknis | | |
+| B — Keaktifan | | |
+| C — Tanggung Jawab | | |
+| D — Kerja Sama | | |
+| **Total** | **/16** | |
+
+**Komentar:**
+> _[Tuliskan komentar singkat]_
+
+---
+
+#### Penilaian untuk Anggota 4: [Nama Anggota 4] *(hapus jika tidak ada)*
+
+| Aspek | Skor (1–4) | Catatan / Bukti Konkret |
+|-------|-----------|--------------------------|
+| A — Kontribusi Teknis | | |
+| B — Keaktifan | | |
+| C — Tanggung Jawab | | |
+| D — Kerja Sama | | |
+| **Total** | **/16** | |
+
+**Komentar:**
+> _[Tuliskan komentar singkat]_
+
+---
+
+### Rekap Nilai Peer Assessment
+
+> *Diisi oleh dosen/asisten setelah semua formulir dikumpulkan.*
+
+| Anggota | Dinilai oleh A1 | Dinilai oleh A2 | Dinilai oleh A3 | Dinilai oleh A4 | Rata-rata | Bobot (%) |
+|---------|:--------------:|:--------------:|:--------------:|:--------------:|:---------:|:---------:|
+| [Nama Anggota 1] | — | /16 | /16 | /16 | | |
+| [Nama Anggota 2] | /16 | — | /16 | /16 | | |
+| [Nama Anggota 3] | /16 | /16 | — | /16 | | |
+| [Nama Anggota 4] | /16 | /16 | /16 | — | | |
+
+> **Catatan:** Kolom penilai sendiri (diagonal) dikosongkan (—) karena anggota tidak menilai diri sendiri.
+
+---
+
 *— Akhir Laporan —*
